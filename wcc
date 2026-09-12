@@ -3,8 +3,8 @@
 int main(){
     
     int escolha = 0;
-    double libras = 0.0f;
-    double quilogramas = 0.0f;
+    double libras = 0.0;
+    double quilogramas = 0.0;
     
     printf("-- CALCULADORA CONVERSOR DE PESO --\n");
     
