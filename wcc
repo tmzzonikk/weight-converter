@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    
+
     int escolha = 0;
     double libras = 0.0;
     double quilogramas = 0.0;
@@ -10,23 +10,26 @@ int main(){
     
     printf("1. quilogramas para libras\n");
     printf("2. libras para quilogramas\n");
-    printf("escolha sua conversão (1 ou 2): ");
+    printf(".Escolha sua conversão! (1 ou 2): ");
     scanf("%d", &escolha);
     
-    if(escolha == 1){
-        printf("coloque o peso em kg: ");
+    switch(escolha){
+    case 1:
+        printf("coloque o peso em kg:\n");
         scanf("%lf", &quilogramas);
         libras = quilogramas * 2.20462;
-        printf("%.2lf quilogramas é igual a %.2f libras\n", quilogramas, libras);
-    }
-    else if(escolha == 2){
-        printf("coloque o peso em libras: ");
+        printf("%.2lf em quilogramas é igual a %.2lf libras!!\n", quilogramas, libras);
+        break;
+    case 2:
+        printf("coloque o peso em lbs:\n");
         scanf("%lf", &libras);
         quilogramas = libras / 2.20462;
-        printf("%.2lf libras é igual a %.2f quilogramas\n", libras, quilogramas);
+        printf("%.2lf em libras é igual a %.2lf quilogramas!!\n", libras, quilogramas);
+        break;
+    default:
+        printf("opção inválida!\n");
+        break;
     }
-    else{
-        printf("escolha inválida! por favor escolha entre 1 ou 2\n");
-    }
+   
     return 0;
 }
