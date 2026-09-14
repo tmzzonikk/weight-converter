@@ -15,13 +15,13 @@ int main(){
     
     switch(escolha){
     case 1:
-        printf("coloque o peso em kg:\n");
+        printf("coloque o peso em kg: ");
         scanf("%lf", &quilogramas);
         libras = quilogramas * 2.20462;
         printf("%.2lf em quilogramas é igual a %.2lf libras!!\n", quilogramas, libras);
         break;
     case 2:
-        printf("coloque o peso em lbs:\n");
+        printf("coloque o peso em lbs: ");
         scanf("%lf", &libras);
         quilogramas = libras / 2.20462;
         printf("%.2lf em libras é igual a %.2lf quilogramas!!\n", libras, quilogramas);
